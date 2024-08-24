@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Data Generation with Google Gemini</h1>
+    <form action="/generate/" method="post" enctype="multipart/form-data">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url"><br><br>
+        <label for="file">Or Upload a File:</label>
+        <input type="file" id="file" name="file"><br><br>
+        <button type="submit">Generate Data</button>
+    </form>
+    <div id="result">
+        <!-- Result will be displayed here -->
+    </div>
+</body>
+</html>
